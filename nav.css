@@ -1,0 +1,478 @@
+@import url('https://fonts.googleeapis.com/css?family=Open+Sans');
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+.section {
+  max-width: 100px;
+}
+
+
+.nav {
+    position: sticky;
+    background-color: #222;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items:center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+    .nav ul {
+        display:flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 7px 15px;
+        transition: all 0.3s ease-in-out;
+        float: left;
+        margin-top: 10px;
+    }
+.nav.active {
+    background-color: aliceblue;
+    box-shadow: #222;
+}
+
+.nav.active a {
+    color: black;
+}
+    .nav.active .container {
+        padding: 10px 0;
+      }
+.nav a.current,
+.nav a:hover {
+    color: #a71313;
+    font-weight: bold;
+}
+.nav .toggle_btn{
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.toggle_btn{
+  color: white;
+}
+.action_btn{
+  background-color: rgb(167, 162, 162);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.rem;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: right;
+  display: flex;;
+}
+.action_btn:hover{
+  scale: 1.05;
+  color: white;
+  transition: 0.2 ease-in-out;
+
+}
+
+
+.hero img{
+ height: auto;
+ background: no-repeat;
+ background-size: cover;
+ background-position: bottom center;
+ width: 100%;
+ color: #a71313;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ position: relative;
+margin-bottom: 20px;
+z-index: -2;
+object-fit: cover;
+}
+img {
+max-width: 100%;
+}
+button {
+  font-size: 20px;
+  height: 50px;
+  position:relative;
+  align-items: center;
+  background-color:rgb(70, 68, 68);
+  margin: 10px 50px;
+  bottom: 110px;
+  right: 54px;
+  border-color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  color: white;
+  font-weight: bold;
+  font-family: 'candara';
+  border-style: none;
+}
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+.centered p {
+  position: relative;
+}
+
+button :hover {
+  background-color:white;
+
+}
+.head {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #0a0a5a;
+  width: 50%;
+  height: 30%;
+  font-weight:bold;
+  left: 50%;
+}
+.head h2{
+  font-size: 70px;
+
+}
+.head p {
+  color:#0a0a5a;
+ }
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0,0,0.6);
+    z-index: -2;
+}
+.gallery {
+display: flex;
+flex-direction: row;
+align-content: center;
+padding-left: 50px;
+}
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom2 {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  
+  .zoom2:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom3 {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 55%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  
+  .zoom3:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom4 {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 55%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .zoom4 img{
+ height: 200px
+  }
+  
+  .zoom4:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.hero h1 {
+
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 100px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    color:  #0a0a5a;
+    font-size: 70px;
+  }
+ .content{
+  background-image: linear-gradient(to bottom right,white, #81c9e5);
+  top: -20px;
+  position: relative;
+  
+  
+
+ }
+ .content img{
+  width: 400px;
+  padding-top: 20px;
+  
+ }
+.content li, p{
+  margin-left: 20px;
+  color: #25257f;
+  font-size:larger;
+ font-weight:bold;
+ font-family: 'Times New Roman', Times, serif;
+}
+.content li{
+  color: rgb(61, 57, 57);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  color: white;
+    pointer-events: visible;
+    background-color:#0a0a5a;
+    width:200%;
+    padding-left:00px;
+    height: 60px;   
+  
+}
+ .back h2{
+  align-content: center;
+  color: white;
+ text-align: center;
+ font-size: 50px;
+ }
+.content2 {
+  background-color: #81c9e5;
+  align-content: center;
+  display:flex;
+  flex-direction:column;
+  padding-right: 50%;
+  margin-top: -20px;
+
+}
+.content2  ul {
+    color: white;
+    line-height: 30px; 
+    list-style-type: none;      
+}
+
+.img1 {
+  width: 70px;
+  position: relative;
+  top: 100%; 
+  margin: 20px auto;
+  margin-left: 50px;
+}
+.img1 a {
+  color: black;
+}
+.img2 {
+  width: 70px;
+  position: relative;
+  top: 300%;
+  margin: 0 auto;
+  margin-left: 50px;
+}
+.img2 a {
+  list-style-type: none;
+  color: black;
+
+}
+.img3 {
+  width: 70px;
+  position: relative;
+  padding-top: 20px;
+  margin: 0px auto;
+  margin-left: 50px;
+}
+.img3 a{
+  list-style-type: none;
+  color: black;
+}
+.img4 {
+  width: 70px;
+  position: relative;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.img4 a{
+  list-style-type: none;
+  color: black;
+}
+
+
+ /* Place the navbar at the bottom of the page, and make it stick */
+ article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+.div {
+  display: flex;
+  position: fixed;
+  max-width: 2000px;
+  width: max-content;
+  
+  }
+canvas {
+border:5px solid #5830b4;
+background-color: #5830b4;
+
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 0;
+    background-color: black;
+    color:white; 
+    margin-left: -100px;
+    margin-right: -100px;
+    background-size: cover;
+    position: relative;
+    width: 118.7rem;
+
+  }
+
+  .footer p {
+    color: white;
+    pointer-events: visible;
+    font-display :center;
+  }
+  /*drop down menu*/
+  
+  .dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height:0;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .dropdown_menu .open{
+    height: 240px;
+  }
+  .dropdown_menu .action_btn{ 
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*Responsive Design*/
+  @media(max-width: 992px){
+  .nav .link,
+  .nav .action_btn {
+    display: none;
+  }
+  .nav ul{
+    display: none;
+  }
+  .nav .toggle_btn{
+    display: block;
+  }
+  .nav .logo{
+    font-size: medium; 
+  }
+  .toggle_btn{
+    padding-right: 10px;
+  }
+  body{
+    display: block;
+    max-width: 100%;
+  }
+  .hero img{
+    width: 50%;
+  }
+  .head h2{
+    font-size: 2rem;
+  }
+  .content{
+    width:100%;
+  }
+  .content h2{
+    font-size: 2rem;
+  }
+  .content li{
+    font-size:large;
+
+  }
+  .dropdown_menu{
+    display: block;
+  }
+  .gallery{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .gallery .img{
+    width:1000px
+  }
+  .back{
+    width: 200%;
+  }
+  .back h2{
+    font-size: 25px;
+  }
+  .footer {
+    display: flex;
+    justify-content:center;
+    color:white;
+    width: 220%;
+
+  }
+
+  .footer p {
+    color: white;
+    pointer-events: visible;
+    background-color: black;
+    font-size: 10px;
+    align-content: center;
+    justify-items: center;  
+  }
+}
