@@ -110,22 +110,17 @@ img {
 max-width: 100%;
 }
 button {
-  font-size: 20px;
-  height: 50px;
-  position:relative;
-  align-items: center;
+  font-size: 17px;
+  height: 40px;
+  position:sticky;
   background-color:rgb(70, 68, 68);
-  margin: 10px 50px;
-  bottom: 110px;
-  right: 54px;
   border-color:white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration:none;
+  padding: 0px 15px;
   color: white;
-  font-weight: bold;
   font-family: 'candara';
   border-style: none;
+  margin-left: -250px;
+  margin-bottom: 30px;
 }
 .button1:hover {
   background-color: black;
@@ -151,7 +146,7 @@ button :hover {
   left: 50%;
 }
 .head h2{
-  font-size: 70px;
+  font-size: 50px;
 
 }
 .head p {
@@ -237,13 +232,11 @@ h2 {
   background-image: linear-gradient(to bottom right,white, #81c9e5);
   top: -20px;
   position: relative;
-  
-  
-
  }
  .content img{
   width: 400px;
   padding-top: 20px;
+  margin-bottom: 30px;
   
  }
 .content li, p{
@@ -436,10 +429,23 @@ background-color: #5830b4;
     width:100%;
   }
   .content h2{
-    font-size: 2rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .content p{
+    font-size: 13px;
+  }.content img{
+    width:300px;
+  }
+  .content .button1{
+    width: 100px;
+  }
+  .content .a {
+    width: 10px;
   }
   .content li{
-    font-size:large;
+    font-size:small;
 
   }
   .dropdown_menu{
